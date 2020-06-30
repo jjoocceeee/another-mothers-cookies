@@ -8,3 +8,174 @@
     object-fit: contain;
     max-width: 100%;
   }
+
+  img {
+    vertical-align: middle;
+    border-style: none;
+    object-fit: contain;
+    max-width: 100%;
+    padding-bottom: 30px;
+  }
+  
+  p{
+    font-family:'Source Sans Pro', 'Noto Serif TC', serif;
+  }
+  
+  .quote{
+    font-family:'Arima Madurai', 'Parisienne', 'Source Sans Pro', serif;
+  }
+  
+  h1,
+  .h1{
+    font-family:'Arima Madurai', 'Source Sans Pro', 'Noto Serif TC', serif;
+  }
+  .navbar-brand{
+    font-family:"Parisienne", "Arima Madurai", cursive;
+  }
+  
+  .signature{
+    font-family: "Parisienne", cursive;
+    font-size: 24px;
+    text-shadow: 4px 4px 4px #aaa;
+  }
+  
+  .btn-primary {
+    background-color: $primary;
+    border-color: $primary;
+    &:hover,
+    &:focus,
+    &:active {
+      color: $white;
+      background-color: darken($primary, 7.5) !important;
+      border-color: darken($primary, 7.5) !important;
+    }
+  }
+  
+  .bg-primary {
+    background-color: $primary;
+    border-color: $primary;
+  }
+  
+  .primary-color {
+    background-color: $primary;
+    border-color: $primary;
+  }
+  
+  .btn-lg {
+    font-size: 16px;
+    padding: 25px 35px;
+  }
+  .bckgrnd {
+    background-color: $primary;
+    border-color: $primary;
+  }
+  .bckgrnd-dark {
+    background-color: #e9e6e5;
+    border-color: #e9e6e5;
+    color: #000000;
+  
+  }
+  .image{
+    position:relative;
+    overflow:hidden;
+  }
+  .image img{
+    border-width: 10px;
+    // position:absolute;
+  }
+  .transparent{
+    opacity: 0.5;
+  }
+  
+  .heading {
+    color: $secondary;  
+  }
+  
+  .quote { 
+    background: #fff; 
+    border-top: 5px solid #F2CBCB; 
+    border-bottom: 5px solid #F2CBCB; 
+    margin: 1.5em 0px; 
+    padding: 0.5em 10px; 
+    quotes: "\201C""\201D""\2018""\2019"; 
+    color: $secondary; 
+    font-size: 23px; 
+    padding-top: 35px; 
+    padding-left: 50px; 
+    padding-right: 50px; 
+    padding-bottom: 35px; 
+  }
+  
+  .quote:before { 
+    color: $secondary; 
+    content: open-quote; 
+    font-size: 4em; 
+    line-height: 0.1em; 
+    margin-right: 0.1em; 
+    vertical-align: -0.4em; 
+    font-family: Volkhov, Georgia, Serif; 
+  }
+  
+  .quote:after { 
+    color: $secondary; 
+    content: close-quote; 
+    font-size: 4em; 
+    line-height: 0.1em; 
+    margin-left: 0.1em; 
+    vertical-align: -0.6em; 
+    font-family: Volkhov, Georgia, Serif; 
+  }
+  
+  .quote p { 
+    display: inline; 
+  }
+  
+  .image-caption {
+    font-size: 15px; 
+    margin-top: -0.10rem !important;
+    text-align: center !important; 
+  }
+  
+  .secondary {
+    color: $secondary; 
+  }
+  .compliment {
+    color: #9c0045
+  }
+  
+  .equal {
+    display: flex;
+    display: -webkit-flex;
+    flex-wrap: wrap;
+  }
+  
+  .transparent-input {
+    background-color: rgba(250, 250, 250, 0.781);
+  }
+  
+  .form-background {
+    background-size: cover;
+    width: 100%;
+    overflow:hidden;
+  }
+  
+  .white-text {
+    color: white;
+  }
+  
+  .black-text {
+    color: black;
+  }
+  
+  .white {
+    background-color: white;
+  }
+  
+  .square {
+    height: 60px;
+    width: 40px;
+    background-color: #ffffff;
+    position: relative;
+    top: 80px;
+    z-index: 1;
+  }

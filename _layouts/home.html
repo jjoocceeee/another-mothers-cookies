@@ -1,5 +1,8 @@
 ---
 layout: default
+image_1: '/img/home/image_1.png'
+image_2: '/img/home/image_2.png'
+image_3: '/img/home/image_3.png'
 ---
 
 <!-- Page Header -->
@@ -13,25 +16,36 @@ layout: default
     </div>
   </header>
 
-
-
   <div class="container">
     <div class="row">
       <div class="col-4">
-        <a target="_blank" href="/img/home/image_1.png">
-          <img class="basic-image outline-image" src="/img/home/image_1.png" alt="Flowers1">
+        <a target="_blank" href="{{ page.image_1 | prepend: site.baseurl | replace: '//', '/' }}">
+          <img class="basic-image outline-image" src="{{ page.image_1 | prepend: site.baseurl | replace: '//', '/' }}" alt="Flowers1">
       </a>
       </div>
       <div class="col-4">
-        <a target="_blank" href="/img/home/image_2.png">
-          <img class="basic-image outline-image" src="/img/home/image_2.png" alt="Flowers2">
+        <a target="_blank" href="{{ page.image_2 | prepend: site.baseurl | replace: '//', '/' }}">
+          <img class="basic-image outline-image" src="{{ page.image_2 | prepend: site.baseurl | replace: '//', '/' }}" alt="Flowers2">
       </a>
       </div>
       <div class="col-4">
-        <a target="_blank" href="/img/home/image_3.png">
-          <img class="basic-image outline-image" src="/img/home/image_3.png" alt="Flowers3">
+        <a target="_blank" href="{{ page.image_3 | prepend: site.baseurl | replace: '//', '/' }}">
+          <img class="basic-image outline-image" src="{{ page.image_3 | prepend: site.baseurl | replace: '//', '/' }}" alt="Flowers3">
       </a>
       </div>
     </div>
+    <div class="row">
+      <div class="col">
+        <a href="{{ '/pages/wedding' | prepend: site.baseurl | replace: '//', '/' }}"><h1>Weddings</h1></a>
+      </div>
+      <div class="col">
+        <a href="{{ '/pages/lobby' | prepend: site.baseurl | replace: '//', '/' }}"><h1>Lobby Flowers</h1></a>
+      </div>
+      <div class="col">
+        <a href="{{ '/pages/dances' | prepend: site.baseurl | replace: '//', '/' }}"><h1>Dances & Parties</h1></a>
+      </div>
+      <div class="col">
+        <a href="{{ '/pages/funerals' | prepend: site.baseurl | replace: '//', '/' }}"><h1>Funeral & Condolences</h1></a>
+      </div>
+    </div>
   </div>
-  {% include carousel.html height="50" unit="%" duration="7" %}

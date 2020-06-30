@@ -1,10 +1,9 @@
 ---
 layout: page
-title: Lobby
-weddingParty_pic: ''
-bouquet_pic: ''
-wristCorsage_pic: ''
-boutonniere: ''
+title: Funerals & Condence
+tall_pic: '/img/home/image_1.png'
+casket_pic: '/img/home/image_2.png'
+graveside_pic: '/img/home/image_3.png'
 ---
 <div class="container">
     <div class="row">
@@ -14,7 +13,19 @@ boutonniere: ''
     </div>
     <div class="row">
         <div class="col">
-            {% include carousel.html height="50" unit="%" duration="7" %}
+            <a target="_blank" href="{{ page.tall_pic | prepend: site.baseurl | replace: '//', '/' }}">
+                <img class="basic-image outline-image" src="{{ page.tall_pic | prepend: site.baseurl | replace: '//', '/' }}" alt="Flowers2">
+            </a>
+        </div>
+        <div class="col">
+            <a target="_blank" href="{{ page.casket_pic | prepend: site.baseurl | replace: '//', '/' }}">
+                <img class="basic-image outline-image" src="{{ page.casket_pic | prepend: site.baseurl | replace: '//', '/' }}" alt="Flowers2">
+            </a>
+        </div>
+        <div class="col">
+            <a target="_blank" href="{{ page.graveside_pic | prepend: site.baseurl | replace: '//', '/' }}">
+                <img class="basic-image outline-image" src="{{ page.graveside_pic | prepend: site.baseurl | replace: '//', '/' }}" alt="Flowers2">
+            </a>
         </div>
     </div>
     <div class="row">
@@ -32,6 +43,13 @@ boutonniere: ''
                 incidunt adipisci modi voluptates recusandae iste eligendi, repudiandae corporis quod aut, optio!
                 Explicabo quaerat unde voluptatem! Itaque, eum!
             </p>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col text-center">
+            <h1>
+                Contact for Custom Quote
+            </h1>
         </div>
     </div>
 </div>
