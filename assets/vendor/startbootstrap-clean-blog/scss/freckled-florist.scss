@@ -1,0 +1,10 @@
+.image{
+    position:relative;
+    overflow:hidden;
+  }
+  img {
+    vertical-align: middle;
+    border-style: none;
+    object-fit: contain;
+    max-width: 100%;
+  }

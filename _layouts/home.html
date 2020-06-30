@@ -3,32 +3,35 @@ layout: default
 ---
 
 <!-- Page Header -->
-{% if page.background %}
-<header class="masthead" style="background-image: url('{{ page.background | prepend: site.baseurl | replace: '//', '/' }}')">
-  {% else %}
   <header class="masthead">
-    {% endif %}
-    <div class="overlay"></div>
     <div class="container">
       <div class="row">
-        <div class="col-lg-8 col-md-10 mx-auto">
-          <div class="page-heading">
-            <h1>{{ site.title }}</h1>
-            {% if site.description %}
-            <span class="subheading">{{ site.description }}</span>
-            {% endif %}
-          </div>
+        <div class="text-black text-primary col-lg-8 col-md-10 mx-auto">
+
         </div>
       </div>
     </div>
   </header>
 
-  {% include carousel.html height="50" unit="%" duration="7" %}
+
 
   <div class="container">
     <div class="row">
-      <div class="col-lg-8 col-md-10 mx-auto">
-
+      <div class="col-4">
+        <a target="_blank" href="/img/home/image_1.png">
+          <img class="basic-image outline-image" src="/img/home/image_1.png" alt="Flowers1">
+      </a>
+      </div>
+      <div class="col-4">
+        <a target="_blank" href="/img/home/image_2.png">
+          <img class="basic-image outline-image" src="/img/home/image_2.png" alt="Flowers2">
+      </a>
+      </div>
+      <div class="col-4">
+        <a target="_blank" href="/img/home/image_3.png">
+          <img class="basic-image outline-image" src="/img/home/image_3.png" alt="Flowers3">
+      </a>
       </div>
     </div>
   </div>
+  {% include carousel.html height="50" unit="%" duration="7" %}
