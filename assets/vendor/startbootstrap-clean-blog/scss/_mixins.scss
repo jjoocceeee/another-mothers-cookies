@@ -61,8 +61,11 @@
   background-size: cover;
 }
 @mixin serif-font() {
-  font-family: 'Lora', 'Times New Roman', serif;
+  font-family: 'Josefin Sans', 'Times New Roman', serif;
 }
 @mixin sans-serif-font() {
-  font-family: 'Open Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  font-family: 'Josefin Sans', 'Open Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+}
+@mixin title-font(){
+font-family: 'Dancing Script', 'Pacifico', 'Satisfy', cursive;
 }

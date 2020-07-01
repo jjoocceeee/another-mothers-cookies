@@ -5,57 +5,81 @@ description: Have questions? I have answers.
 background: '/img/bg-contact.jpg'
 form: true
 ---
+<div class="container">
+  <div class="row justify-content-center">
+    <div class="col-lg-2 col-sm-12">
+      <a target="_blank" href="{{ '/img/logo.png' | prepend: site.baseurl | replace: '//', '/' }}">
+        <img class="basic-image outline-image" src="{{ '/img/logo.png' | prepend: site.baseurl | replace: '//', '/' }}"
+          alt="Flowers1">
+      </a>
+    </div>
+  </div>
+  <div class="row">
+    <div class="col">
+      <p>What can I create for you?</p>
 
-<p>What can I create for you?</p>
-<form>
-  <div class="row">
-    <div class="col">
-      <div class="form-group">
-        <input type="text" class="form-control" id="name" aria-describedby="emailHelp" placeholder="Name">
-      </div>
-    </div>
-    <div class="col">
-      <div class="form-group">
-        <input type="text" class="form-control" id="eventDate" aria-describedby="emailHelp" placeholder="Event Date">
-      </div>
     </div>
   </div>
   <div class="row">
     <div class="col">
-          <div class="form-group">
-            <input type="email" class="form-control" id="email" aria-describedby="emailHelp" placeholder="Email">
-      </div>
-    </div>
-    <div class="col">
-      <div class="form-check pt-2">
-        <input type="checkbox" class="form-check-input" id="exampleCheck1">
-        <label class="form-check-label" for="exampleCheck1">Collaboration?*</label>
-      </div>
+      <form>
+        <div class="row">
+          <div class="col">
+            <div class="form-group">
+              <input type="text" class="form-control" id="name" aria-describedby="emailHelp" placeholder="Name">
+            </div>
+          </div>
+          <div class="col">
+            <div class="form-group">
+              <input type="text" class="form-control" id="eventDate" aria-describedby="emailHelp"
+                placeholder="Event Date">
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col">
+            <div class="form-group">
+              <input type="email" class="form-control" id="email" aria-describedby="emailHelp" placeholder="Email">
+            </div>
+          </div>
+          <div class="col">
+            <div class="form-check pt-2">
+              <input type="checkbox" class="form-check-input" id="exampleCheck1">
+              <label class="form-check-label" for="exampleCheck1">Collaboration?*</label>
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col">
+            <div class="form-group">
+              <input type="text" class="form-control" id="phoneNumber" aria-describedby="phone"
+                placeholder="Phone Number">
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col">
+            <div class="form-group">
+              <input type="comment" rows="5" class="form-control" id="Message" aria-describedby="message"
+                placeholder="Message">
+            </div>
+          </div>
+        </div>
+        <button type="submit" class="btn btn-primary">Submit</button>
+        <div class="row">
+          <div class="col">
+            <p>
+              * A note on Collaborations:
+            </p>
+            <p>
+              I recieve numberous requests to collaborate per month. I love being part of creative shoots & set ups.
+              Please consider a budget (or trade beyone exposure), when including a florist in your collaborations,
+              since we are providing a costly product which cannot be sold or reused. Also provide plentry of notice to
+              ensure our inventory matches your mood board.
+            </p>
+          </div>
+        </div>
+      </form>
     </div>
   </div>
-  <div class="row">
-    <div class="col">
-      <div class="form-group">
-        <input type="text" class="form-control" id="phoneNumber" aria-describedby="phone" placeholder="Phone Number">
-      </div>
-    </div>
-  </div>
-  <div class="row">
-    <div class="col">
-      <div class="form-group">
-        <input type="comment" rows="5" class="form-control" id="Message" aria-describedby="message" placeholder="Message">
-      </div>
-    </div>
-  </div>
-  <button type="submit" class="btn btn-primary">Submit</button>
-  <div class="row">
-    <div class="col">
-      <p>
-        * A note on Collaborations:
-      </p>
-      <p>
-        I recieve numberous requests to collaborate per month. I love being part of creative shoots & set ups. Please consider a budget (or trade beyone exposure), when including a florist in your collaborations, since we are providing a costly product which cannot be sold or reused. Also provide plentry of notice to ensure our inventory matches your mood board.
-      </p>
-    </div>
-  </div>
-</form>
+</div>

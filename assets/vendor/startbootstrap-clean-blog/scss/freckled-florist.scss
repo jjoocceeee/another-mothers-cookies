@@ -1,3 +1,9 @@
+$main: #4B0082;
+$second: #9370DB;
+$gray: #e9e6e5;
+$highlight: #d35d72;
+$gold: #ffd8ca;
+$danger: red;
 .image{
     position:relative;
     overflow:hidden;
@@ -18,47 +24,59 @@
   }
   
   p{
-    font-family:'Source Sans Pro', 'Noto Serif TC', serif;
+    font-family:'Josefin Sans', 'Noto Serif TC', serif;
   }
   
   .quote{
-    font-family:'Arima Madurai', 'Parisienne', 'Source Sans Pro', serif;
+    font-family:'Dancing Script', 'Parisienne', 'Josefin Sans', serif;
   }
   
   h1,
   .h1{
-    font-family:'Arima Madurai', 'Source Sans Pro', 'Noto Serif TC', serif;
+    font-family: 'Satisfy', 'Pacifico','Dancing Script', serif;
   }
   .navbar-brand{
-    font-family:"Parisienne", "Arima Madurai", cursive;
+    font-family:"Satisfy", "Dancing Script", cursive;
   }
   
-  .signature{
-    font-family: "Parisienne", cursive;
-    font-size: 24px;
-    text-shadow: 4px 4px 4px #aaa;
-  }
   
-  .btn-primary {
-    background-color: $primary;
-    border-color: $primary;
+  .btn-main {
+    background-color: $main;
+    border-color: $main;
     &:hover,
     &:focus,
     &:active {
       color: $white;
-      background-color: darken($primary, 7.5) !important;
-      border-color: darken($primary, 7.5) !important;
+      background-color: darken($main, 7.5) !important;
+      border-color: darken($main, 7.5) !important;
+    }
+  }
+
+  .btn-second {
+    background-color: $second;
+    border-color: $second;
+    &:hover,
+    &:focus,
+    &:active {
+      color: $white;
+      background-color: darken($second, 7.5) !important;
+      border-color: darken($second, 7.5) !important;
     }
   }
   
-  .bg-primary {
-    background-color: $primary;
-    border-color: $primary;
+  .bg-main {
+    background-color: $main;
+    border-color: $main;
+  }
+
+  .bg-second {
+    background-color: $second;
+    border-color: $second;
   }
   
-  .primary-color {
-    background-color: $primary;
-    border-color: $primary;
+  .main-color {
+    background-color: $main;
+    border-color: $main;
   }
   
   .btn-lg {
@@ -66,8 +84,8 @@
     padding: 25px 35px;
   }
   .bckgrnd {
-    background-color: $primary;
-    border-color: $primary;
+    background-color: $main;
+    border-color: $main;
   }
   .bckgrnd-dark {
     background-color: #e9e6e5;
@@ -88,7 +106,7 @@
   }
   
   .heading {
-    color: $secondary;  
+    color: $highlight;  
   }
   
   .quote { 
@@ -98,7 +116,7 @@
     margin: 1.5em 0px; 
     padding: 0.5em 10px; 
     quotes: "\201C""\201D""\2018""\2019"; 
-    color: $secondary; 
+    color: $highlight; 
     font-size: 23px; 
     padding-top: 35px; 
     padding-left: 50px; 
@@ -107,7 +125,7 @@
   }
   
   .quote:before { 
-    color: $secondary; 
+    color: $highlight; 
     content: open-quote; 
     font-size: 4em; 
     line-height: 0.1em; 
@@ -117,7 +135,7 @@
   }
   
   .quote:after { 
-    color: $secondary; 
+    color: $highlight; 
     content: close-quote; 
     font-size: 4em; 
     line-height: 0.1em; 
@@ -136,8 +154,8 @@
     text-align: center !important; 
   }
   
-  .secondary {
-    color: $secondary; 
+  .highlight {
+    color: $highlight; 
   }
   .compliment {
     color: #9c0045
@@ -177,5 +195,60 @@
     background-color: #ffffff;
     position: relative;
     top: 80px;
+    z-index: 1;
+  }
+
+  .btn-four:hover span {
+    transform: scale(1.2, 1.2);
+  }
+  
+  .btn-four::before {
+    opacity: 0;
+    background: rgba(255, 255, 255, 0.1);
+    transform: scale(0.1, 0.1);
+  }
+  
+  .btn-four:hover::before {
+    opacity: 1;
+    transform: scale(1, 1);
+  }
+  
+  .btn-four::after {
+    transition: all 0.3s;
+    border: 1px solid rgba(255, 255, 255, 0.5);
+  }
+  
+  .btn-four:hover::after {
+    transform: scale(0, 0);
+    opacity: 0;
+  }
+
+  // .btn-four{
+  //   background: #9888A5
+  // }
+  
+  
+  /*
+   BUTTON STYLING
+  */
+  
+  .btn {
+    position: relative;
+    color: white;
+    transition: all 0.3s;
+    span {
+      transition: all 0.3s;
+      tranform: scale(1, 1);
+    }
+  }
+  
+  .btn::before, .btn::after {
+    content: '';
+    position: absolute;
+    transition: all 0.3s;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
     z-index: 1;
   }

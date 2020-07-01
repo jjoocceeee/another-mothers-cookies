@@ -1,8 +1,9 @@
 ---
 layout: default
-image_1: '/img/home/image_1.png'
-image_2: '/img/home/image_2.png'
-image_3: '/img/home/image_3.png'
+image_1: '/img/home/1.png'
+image_2: '/img/home/2.png'
+image_3: '/img/home/3.png'
+logo: '/img/logo.png'
 ---
 
 <!-- Page Header -->
@@ -17,34 +18,41 @@ image_3: '/img/home/image_3.png'
   </header>
 
   <div class="container">
-    <div class="row">
-      <div class="col-4">
-        <a target="_blank" href="{{ '/img/home/image_1.png' | prepend: site.baseurl | replace: '//', '/' }}">
-          <img class="basic-image outline-image" src="{{ '/img/home/image_1.png' | prepend: site.baseurl | replace: '//', '/' }}" alt="Flowers1">
-      </a>
-      </div>
-      <div class="col-4">
-        <a target="_blank" href="{{ '/img/home/image_2.png' | prepend: site.baseurl | replace: '//', '/' }}">
-          <img class="basic-image outline-image" src="{{ '/img/home/image_2.png' | prepend: site.baseurl | replace: '//', '/' }}" alt="Flowers2">
-      </a>
-      </div>
-      <div class="col-4">
-        <a target="_blank" href="{{ '/img/home/image_3.png' | prepend: site.baseurl | replace: '//', '/' }}">
-          <img class="basic-image outline-image" src="{{ '/img/home/image_3.png' | prepend: site.baseurl | replace: '//', '/' }}" alt="Flowers3">
+    <div class="row justify-content-center">
+      <div class="col-lg-2 col-sm-12">
+        <a target="_blank" href="{{ '/img/logo.png' | prepend: site.baseurl | replace: '//', '/' }}">
+          <img class="basic-image outline-image" src="{{ '/img/logo.png' | prepend: site.baseurl | replace: '//', '/' }}" alt="Flowers1">
       </a>
       </div>
     </div>
     <div class="row">
-      <div class="col">
+      <div class="col-lg-4 col-sm-12">
+        <a target="_blank" href="{{ '/img/home/1.png' | prepend: site.baseurl | replace: '//', '/' }}">
+          <img class="basic-image outline-image" src="{{ '/img/home/1.png' | prepend: site.baseurl | replace: '//', '/' }}" alt="Flowers1">
+      </a>
+      </div>
+      <div class="col-lg-4 d-none d-md-block">
+        <a target="_blank" href="{{ '/img/home/2.png' | prepend: site.baseurl | replace: '//', '/' }}">
+          <img class="basic-image outline-image" src="{{ '/img/home/2.png' | prepend: site.baseurl | replace: '//', '/' }}" alt="Flowers2">
+      </a>
+      </div>
+      <div class="col-lg-4 d-none d-md-block">
+        <a target="_blank" href="{{ '/img/home/3.png' | prepend: site.baseurl | replace: '//', '/' }}">
+          <img class="basic-image outline-image" src="{{ '/img/home/3.png' | prepend: site.baseurl | replace: '//', '/' }}" alt="Flowers3">
+      </a>
+      </div>
+    </div>
+    <div class="row jusitfy-content-center text-center">
+      <div class="col-sm-12 col-md-12 col-lg-3 py-3">
         <a href="{{ '/pages/wedding' | prepend: site.baseurl | replace: '//', '/' }}"><h1>Weddings</h1></a>
       </div>
-      <div class="col">
+      <div class="col-sm-12 col-md-12 col-lg-3 py-3">
         <a href="{{ '/pages/lobby' | prepend: site.baseurl | replace: '//', '/' }}"><h1>Lobby Flowers</h1></a>
       </div>
-      <div class="col">
+      <div class="col-sm-12 col-md-12 col-lg-3 py-3">
         <a href="{{ '/pages/dances' | prepend: site.baseurl | replace: '//', '/' }}"><h1>Dances & Parties</h1></a>
       </div>
-      <div class="col">
+      <div class="col-sm-12 col-md-12 col-lg-3 py-3">
         <a href="{{ '/pages/funerals' | prepend: site.baseurl | replace: '//', '/' }}"><h1>Funeral & Condolences</h1></a>
       </div>
     </div>
