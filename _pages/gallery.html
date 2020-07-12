@@ -1,0 +1,39 @@
+---
+layout: page
+title: Gallery
+images:
+- image_path: /img/home/image_1.png
+  title: Apple Pie
+- image_path: /img/home/image_1.png
+  title: Birthday Cake
+- image_path: /img/home/image_1.png
+  title: Black Forest
+- image_path: /img/home/image_1.png
+  title: Brownie
+- image_path: /img/home/image_1.png
+  title: Cheese Cake
+- image_path: /img/home/image_1.png
+  title: Chocolate Cake
+- image_path: /img/home/image_1.png
+  title: Fruit Cake
+- image_path: /img/home/image_1.png
+  title: Lamington
+- image_path: /img/home/image_1.png
+  title: Lemon Cake
+---
+<div class="container">
+  <div class="row">
+    <div class="col text-center py-5">
+        <h1 class="title">{{ page.title }}</h1>
+    </div>
+  </div>
+<div class="row">
+  {% for image in page.images %}
+      <div class=" col-md-4 col-sm-12 image-gallery">
+      <img src="{{ image.image_path | prepend: site.baseurl | replace: '//', '/' }}" alt="{{ image.title}}" />
+    </div>
+    {% endfor %}
+</div>
+</div>
+
+

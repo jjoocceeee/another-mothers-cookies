@@ -22,6 +22,12 @@ $danger: red;
     max-width: 100%;
     padding-bottom: 30px;
   }
+
+.title
+{
+  font-family:'Dancing Script', 'Parisienne', 'Josefin Sans', serif;
+  font-size: 50px;
+}
   
   p{
     font-family:'Josefin Sans', 'Noto Serif TC', serif;
@@ -252,3 +258,9 @@ $danger: red;
     height: 100%;
     z-index: 1;
   }
+
+.image-gallery {overflow: auto; margin-left: -1%!important;}
+.image-gallery li {float: left; display: block; margin: 0 0 1% 1%; width: 19%;}
+.image-gallery li a {text-align: center; text-decoration: none!important; color: #777;}
+.image-gallery li a span {display: block; text-overflow: ellipsis; overflow: hidden; white-space: nowrap; padding: 3px 0;}
+.image-gallery li a img {width: 100%; display: block;}
