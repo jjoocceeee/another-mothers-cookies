@@ -25,7 +25,7 @@ contactButton_text: Schedule a Consultation
             <a target="_blank" href="{{ page.weddingParty_pic | prepend: site.baseurl | replace: '//', '/' }}">
                 <img class="basic-image outline-image" src="{{ page.weddingParty_pic | prepend: site.baseurl | replace: '//', '/' }}" alt="Flowers1">
             </a>
-        </div>
+        </div>          
     </div>
     <div class="row">
         <div class="col-lg-4 col-sm-12">
@@ -40,11 +40,11 @@ contactButton_text: Schedule a Consultation
         </div>
         <div class="col-lg-4 col-sm-12">
             <div class="row justify-content-center align-items-center">
-                <div class="col-lg-12 col-sm-12 text-center pb-4">
+                <div class="col-lg-8 col-sm-12 text-center pb-4">
                     <div class="container-4">
-                        <div class="btn btn-four bg-second">
-                            <span>{{contactButton_text}}</span>
-                        </div>
+                        <a href="/freckled-florist/pages/contact">
+                            <img class="basic-image outline-image" src="{{ '/img/assets/schedule_consultation.png' | prepend: site.baseurl | replace: '//', '/' }}" alt="schedule a consultation">
+                        </a>
                     </div>
                 </div>
             </div>
