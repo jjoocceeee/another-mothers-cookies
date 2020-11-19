@@ -5,23 +5,42 @@ $highlight: #d35d72;
 $gold: #ffd8ca;
 $danger: red;
 .image{
-    position:relative;
-    overflow:hidden;
-  }
-  img {
-    vertical-align: middle;
-    border-style: none;
-    object-fit: contain;
-    max-width: 100%;
-  }
+  position:relative;
+  overflow:hidden;
+}
+img {
+  vertical-align: middle;
+  border-style: none;
+  object-fit: contain;
+  max-width: 100%;
+}
 
-  img {
-    vertical-align: middle;
-    border-style: none;
-    object-fit: contain;
-    max-width: 100%;
-    padding-bottom: 30px;
-  }
+img {
+  vertical-align: middle;
+  border-style: none;
+  object-fit: contain;
+  max-width: 100%;
+  padding-bottom: 30px;
+}
+
+.panel-img {
+  float:  left;
+  width:  100px;
+  background-size: cover;
+}
+
+primary-color{
+  background-color: $primary;
+  border-color: $primary;
+}
+secondary-color{
+  background-color: $secondary;
+  border-color: $secondary;
+}
+
+basic-image {
+  object-fit: cover;
+}
 
 .title
 {
@@ -89,6 +108,11 @@ $danger: red;
     font-size: 16px;
     padding: 25px 35px;
   }
+.bckgrnd-light{
+  background-color: $second;
+  border-color: $second;
+}
+
   .bckgrnd {
     background-color: $main;
     border-color: $main;
