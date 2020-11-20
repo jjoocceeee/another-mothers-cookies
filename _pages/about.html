@@ -1,6 +1,6 @@
 ---
 layout: page
-title: About
+title: About Me
 profile_pic: '/img/about/profile.png'
 family_pic: '/img/about/family.png'
 top_text: Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sed quisquam ut perspiciatis, repudiandae nulla animi iste vel, praesentium repellendus molestias aliquid consequatur, earum rem qui error voluptates eius enim consequuntur!Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ex alias, earum consectetur quia natus ducimus
@@ -8,34 +8,31 @@ bottom_text:  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sed quis
 ---
 <div class="container">
     <div class="row">
-        <div class="col text-center">
+        <div class="col text-center py-5">
             <h1 class="title">{{ page.title }}</h1>
         </div>
     </div>
-    <div class="row">
-        <div class="col-lg-6 col-sm-12">
-            <a target="_blank" href="{{ page.profile_pic | prepend: site.baseurl | replace: '//', '/' }}">
-                <img class="basic-image outline-image" src="{{ page.profile_pic | prepend: site.baseurl | replace: '//', '/' }}" alt="Flowers1">
+    <div class="row justify-content-center p-2">
+        <div class="col-sm-12 col-md-12 col-lg-5">
+            <a target="_blank" href="{{ page.profile_pic }}">
+                <img class="basic-image outline-image"
+                    src="{{ page.profile_pic | prepend: site.baseurl | replace: '//', '/' }}" alt="{{ page.title }}">
             </a>
         </div>
-        <div class="col-lg-6 col-sm-12">
-            <p>
-                {{page.top_text}}
-            </p>
+        <div class="col-sm-12 col-md-12 col-lg-5">
+            <p>{{page.top_text}}</p>
         </div>
-    </div>
-    <div class="row">
-        <div class="col-lg-6 col-sm-12">
-            <p>
-                {{page.bottom_text}}
-            </p>
+      </div>
+    
+      <div class="row justify-content-center p-2">
+        <div class="col-md-12 col-lg-5 col-sm-12 order-lg-2">
+            <a target="_blank" href="{{page.family_pic}}">
+                <img class="basic-image outline-image"
+                src="{{ page.family_pic | prepend: site.baseurl | replace: '//', '/' }}" alt="{{ page.title }}">
+            </a>
         </div>
-        <div class="col">
-            <div class="col-lg-6 col-sm-12">
-                <a target="_blank" href="{{ page.family_pic | prepend: site.baseurl | replace: '//', '/' }}">
-                    <img class="basic-image outline-image" src="{{ page.family_pic | prepend: site.baseurl | replace: '//', '/' }}" alt="Flowers1">
-                </a>
-            </div>
-        </div> 
-    </div>
+        <div class="col-sm-12 col-md-12 col-lg-5 order-lg-1">
+            <p>{{page.bottom_text}}</p>
+        </div>
+      </div>
 </div>

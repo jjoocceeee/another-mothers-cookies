@@ -1,71 +1,86 @@
 ---
 layout: page
 title: Dances & Parties
+image_1: '/img/home/image_1.png'
 cuffs_pic: '/img/home/image_1.png'
+flowers_1: '/img/home/image_1.png'
+flowers_2: '/img/home/image_1.png'
+flowers_3: '/img/home/image_1.png'
+flowers_4: '/img/home/image_1.png'
 boutonniere: '/img/home/image_1.png'
 group_pic: '/img/home/image_3.png'
+banner_2: '/img/dances/flower_banner.png'
+mainColor: 9370DB
 ---
-<div class="container">
+  <div class="container">
     <div class="row">
         <div class="col text-center py-5">
             <h1 class="title">{{ page.title }}</h1>
         </div>
     </div>
     <div class="row">
-        <div class="col-lg-6 col-sm-12">
-            <a target="_blank" href="{{ page.cuffs_pic | prepend: site.baseurl | replace: '//', '/' }}">
-                <img class="basic-image outline-image" src="{{ page.cuffs_pic | prepend: site.baseurl | replace: '//', '/' }}" alt="Wrist Cuff">
+        <div class="col d-sm-block d-md-none">
+            <a target="_blank" href="{{page.flowers_4}}">
+              <img class="basic-image outline-image" src="{{ page.flowers_4 | prepend: site.baseurl | replace: '//', '/' }}"
+                alt="{{ page.title }}">
             </a>
-        </div>
-        <div class="col-lg-6 d-none d-md-block">
-            <a target="_blank" href="{{ page.boutonniere | prepend: site.baseurl | replace: '//', '/' }}">
-                <img class="basic-image outline-image" src="{{ page.boutonniere | prepend: site.baseurl | replace: '//', '/' }}" alt="boutonniere">
-            </a>
-        </div>
+          </div>
     </div>
-    <div class="row justify-content-center">
-        <div class="col-lg-8 d-none d-md-block">
-            <a target="_blank" href="{{ page.group_pic | prepend: site.baseurl | replace: '//', '/' }}">
-                <img class="basic-image outline-image" src="{{ page.group_pic | prepend: site.baseurl | replace: '//', '/' }}" alt="Dance Group Phooto">
-            </a>
+      <div class="row align-items-center">
+        <div class="col-sm-12 col-md-12 col-lg-5 order-lg-2 justify-content-center pb-3">
+          <p>{{page.explanation}}</p>
+          <p>{{page.gallery}}</p>
+          <div class="text-center">
+            <h1>Price List</h1>
+          </div>
+          <div class="text-center">
+            <p>Flowers 1 $4.00</p>
+            <p>Flowers 2 $40.00</p>
+            <p>Flowers 3 $6.00</p>
+            <p>Flowers 4 $4.50</p>
+            <p>Flowers 5 $10.00</p>
+            <p>Flowers 5 $10.00</p>
+            <p>Flowers 5 $10.00</p>
         </div>
+        </div>
+        <div class="col-sm-12 col-md-12 col-lg-7">
+          <div class="row">
+            <div class="col">
+              <a target="_blank" href="{{page.flowers_1}}">
+                <img class="basic-image outline-image" src="{{ page.flowers_1 | prepend: site.baseurl | replace: '//', '/' }}"
+                  alt="{{ page.title }}">
+              </a>
+            </div>
+            <div class="col">
+              <a target="_blank" href="{{page.flowers_2}}">
+                <img class="basic-image outline-image" src="{{ page.flowers_2 | prepend: site.baseurl | replace: '//', '/' }}"
+                  alt="{{ page.title }}">
+              </a>
+            </div>
+          </div>
+          <div class="row pt-4">
+            <div class="col">
+              <a target="_blank" href="{{page.flowers_3}}">
+                <img class="basic-image outline-image" src="{{ page.flowers_3 | prepend: site.baseurl | replace: '//', '/' }}"
+                  alt="{{ page.title }}">
+              </a>
+            </div>
+            <div class="col">
+              <a target="_blank" href="{{page.flowers_4}}">
+                <img class="basic-image outline-image" src="{{ page.flowers_4 | prepend: site.baseurl | replace: '//', '/' }}"
+                  alt="{{ page.title }}">
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+     
+    <div class="row my-5">
+      <div class="col">
+        <a target="_blank" href="{{page.banner_2}}">
+          <img class="basic-image outline-image" src="{{ page.banner_2 | prepend: site.baseurl | replace: '//', '/' }}"
+            alt="{{ page.title }}">
+        </a>
+      </div>
     </div>
-    <div class="row justify-content-center align-items-center">
-        <div class="col-lg-4 col-sm-12">
-            <h1 >Price List</h1>
-            <p>
-                <ul>
-                    <li>Flowers 1 $4.00</li>
-                    <li>Flowers 2 $40.00</li>
-                    <li>Flowers 3 $6.00</li>
-                    <li>Flowers 4 $4.50</li>
-                    <li>Flowers 5 $10.00</li>
-                </ul>
-            </p>
-        </div>
-        <div class="col-lg-4 col-sm-12">
-            <h1 >Price List</h1>
-            <p>
-                <ul>
-                    <li>Flowers 1 $4.00</li>
-                    <li>Flowers 2 $40.00</li>
-                    <li>Flowers 3 $6.00</li>
-                    <li>Flowers 4 $4.50</li>
-                    <li>Flowers 5 $10.00</li>
-                </ul>
-            </p>
-        </div>
-        <div class="col-lg-4 col-sm-12">
-            <h1 >Price List</h1>
-            <p>
-                <ul>
-                    <li>Flowers 1 $4.00</li>
-                    <li>Flowers 2 $40.00</li>
-                    <li>Flowers 3 $6.00</li>
-                    <li>Flowers 4 $4.50</li>
-                    <li>Flowers 5 $10.00</li>
-                </ul>
-            </p>
-        </div>
-    </div>
-</div>
+  </div>
