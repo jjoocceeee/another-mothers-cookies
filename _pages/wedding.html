@@ -1,65 +1,51 @@
 ---
 layout: page
 title: Weddings
+about: Flowers for lovers and dreamers
 weddingParty_pic: '/img/wedding/wedding_party_3.png'
 bouquet_pic: '/img/wedding/boutquet.png'
 wristCorsage_pic: '/img/home/image_1.png'
 boutonniere: '/img/wedding/boutinerre.png'
+bottom_banner_image: '/img/wedding/car_flowers.jpg'
 weddingDescriptionTop_text: I would love to help out and create flowers for your perfect day! I love weddings, and want you to be happy. I love wedding flowers! They are my favorite
 weddingDescriptionBottom_text: Schedule a consultation, and we will go through your budget, and find the perfect balance of flowers for your perfect day!
 contactButton_text: Schedule a Consultation
 ---
-<div class="container">
-    <div class="row">
-        <div class="col text-center py-5">
-            <h1 class="title">{{ page.title }}</h1>
+
+<div class="container container-color pt-4" style="background-color: #E0C1E5;">
+    <div class="row pt-2 justify-content-center text-center align-items-center">
+        <div class="col-sm-12 col-md-4 col-lg-4">
+            <h3>{{ page.about }}</h3>
+        </div>
+        <div class="d-none d-md-block col-md-4 col-lg-4">
+            <img class="image_shadow basic-image outline-image" src="{{ page.bouquet_pic | prepend: site.baseurl | replace: '//', '/' }}" alt="Flowers1">
         </div>
     </div>
-    <div class="row">
-        <div class="col-lg-6 col-sm-12">
-            <p>
-                {{page.weddingDescriptionTop_text}}
-            </p>
-        </div>
-        <div class="col-lg-6 col-sm-12">
-            <a target="_blank" href="{{ page.weddingParty_pic | prepend: site.baseurl | replace: '//', '/' }}">
-                <img class="basic-image outline-image" src="{{ page.weddingParty_pic | prepend: site.baseurl | replace: '//', '/' }}" alt="Flowers1">
-            </a>
-        </div>          
+</div>
+
+<div class="container container-color pt-4 px-5" >
+    <div class="row pt-2 justify-content-center text-center align-items-center">
+        <div class="col-sm-12 col-md-12 col-lg-5">
+            <img class="image_shadow basic-image outline-image" src="{{ page.bouquet_pic | prepend: site.baseurl | replace: '//', '/' }}" alt="Flowers1">
+          </div>
+          <div class="col-sm-12 col-md-12 col-lg-5 text-center">
+              <h1>First let me say...</h1>
+              <h3>Congratulations!</h3>
+              <p>{{ page.weddingDescriptionTop_text }}</p>
+          </div>
     </div>
-    <div class="row">
-        <div class="col-lg-4 col-sm-12">
-            <a target="_blank" href="{{ page.bouquet_pic | prepend: site.baseurl | replace: '//', '/' }}">
-                <img class="basic-image outline-image" src="{{ page.bouquet_pic | prepend: site.baseurl | replace: '//', '/' }}" alt="Flowers1">
-            </a>
-        </div>
-        <div class="col-lg-4 col-sm-12">
-            <p>
-                {{page.weddingDescriptionBottom_text}}
-            </p>
-        </div>
-        <div class="col-lg-4 col-sm-12">
-            <div class="row justify-content-center align-items-center">
-                <div class="col-lg-8 col-sm-12 text-center pb-4">
-                    <div class="container-4">
-                        <a href="/freckled-florist/pages/contact">
-                            <img class="basic-image outline-image" src="{{ '/img/assets/schedule_consultation.png' | prepend: site.baseurl | replace: '//', '/' }}" alt="schedule a consultation">
-                        </a>
-                    </div>
-                </div>
-            </div>
-            <div class="row">
-                <div class="col-lg-6 col-sm-12">
-                    <a target="_blank" href="{{ page.wristCorsage_pic | prepend: site.baseurl | replace: '//', '/' }}">
-                        <img class="basic-image outline-image" src="{{ page.wristCorsage_pic | prepend: site.baseurl | replace: '//', '/' }}" alt="Flowers2">
-                    </a>
-                </div>
-                <div class="col-lg-6 col-sm-12">
-                    <a target="_blank" href="{{ page.boutonniere | prepend: site.baseurl | replace: '//', '/' }}">
-                        <img class="basic-image outline-image" src="{{ page.boutonniere | prepend: site.baseurl | replace: '//', '/' }}" alt="Flowers2">
-                    </a>
+</div>
+
+<div class="container container-color pt-4" style="background-image: url('{{ page.bottom_banner_image | prepend: site.baseurl | replace: '//', '/' }}'); background-size: cover;">
+    <div class="row justify-content-center align-items-center text-center">
+        <div class="col">
+            <div class="transbox" >
+                <div class="p-5">
+                    <h1 class="my-2">Flowers as beautiful as the bride</h1>
+                    <a class="btn btn-primary my-2" href="{{"/pages/contact" | relative_url }}" role="button" >Schedule a Consultation</a>
                 </div>
             </div>
         </div>
     </div>
 </div>
+

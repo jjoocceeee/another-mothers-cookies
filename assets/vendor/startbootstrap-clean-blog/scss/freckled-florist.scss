@@ -12,7 +12,46 @@ $danger: red;
   margin-bottom: 8px;
   padding-bottom: 8px;
   max-width: 100%;
+  background: no-repeat center center;
 }
+
+.image_shadow img {
+  -webkit-box-shadow: 0px 0px 17px 0px rgba(0,0,0,0.41);
+    -moz-box-shadow: 0px 0px 17px 0px rgba(0,0,0,0.41);
+    box-shadow: 0px 0px 17px 0px rgba(0,0,0,0.41);
+}
+
+.logo-image {
+  width: 180px;
+  object-fit: cover;
+  overflow: hidden;
+  padding: 0px;
+
+}
+
+div.transbox {
+  margin: 30px;
+  background-color: #ffffffad;
+}
+
+div.transbox h1 {
+  margin: 5%;
+  font-weight: bold;
+  color: #000000;
+}
+div.transbox a {
+  margin: 5%;
+  font-weight: bold;
+  color: #000000;
+}
+
+.centered {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
 .container-purple{
   background-color: #9370DB;
 }
