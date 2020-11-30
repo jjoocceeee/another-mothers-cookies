@@ -1,63 +1,87 @@
 ---
 layout: default
-image_1: '/img/wedding/boutinerre.png'
-image_2: '/img/wedding/wedding_party_2.png'
-image_3: '/img/wedding/wedding_party_1.png'
-logo: '/img/logo.png'
 ---
 
 <!-- Page Header -->
+{% if page.background %}
+<header class="masthead pb-0 mb-0"
+  style="background-image: url('{{ page.background | prepend: site.baseurl | replace: '//', '/' }}')">
+  {% else %}
   <header class="masthead">
+    {% endif %}
+    <div class="overlay"></div>
     <div class="container">
       <div class="row">
-        <div class="text-black text-primary col-lg-8 col-md-10 mx-auto">
+        <div class="col-lg-6 col-md-8 col-sm-12 mx-auto">
+          <div class="page-heading">
+            <h3>{{ page.about }}</h3>
+          </div>
         </div>
       </div>
     </div>
   </header>
 
-  <div class="container">
-    <div class="row justify-content-center">
-      <div class="col-lg-3 col-md-3 col-sm-8 mt-3">
-        <img class="basic-image outline-image" src="{{ '/img/logo.png' | prepend: site.baseurl | replace: '//', '/' }}" alt="Flowers1">
+  <div class="container container-color py-5">
+    <div class="row justify-content-center align-items-center">
+      <div class="col-10">
+        <div class="row justify-content-center align-items-center">
+          <div class="col-lg-6 col-sm-6 col-md-6 pt-3">
+            <div class="row">
+              <div class="col align-items-center justify-content-center">
+                <h3 class="text-center">Flowers to celebrate every moment</h3>
+                <p class="text-center">
+                  {{ page.description }}
+                </p>
+              </div>
+            </div>
+            <div class="row justify-content-center align-items-center">
+              <div class="col-6">
+                <a class="btn btn-primary" href="{{"/pages/gallery" | relative_url }}" role="button">View Creations</a>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-6 col-sm-6 col-md-6 pt-3">
+            <img src="{{ page.banner_image | prepend: site.baseurl | replace: '//', '/' }}" class=" border-white img-thumbnail"
+              alt="Portfolio Piece">
+          </div>
+        </div>
       </div>
     </div>
-    <div class="row">
-      <div class="col-lg-4 col-sm-12">
-        <a target="_blank" href="{{ '/img/wedding/boutinerre.png' | prepend: site.baseurl | replace: '//', '/' }}">
-          <img class="basic-image outline-image" src="{{ '/img/wedding/boutinerre.png' | prepend: site.baseurl | replace: '//', '/' }}" alt="Flowers1">
-      </a>
-      </div>
-      <div class="col-lg-4 d-none d-md-block">
-        <a target="_blank" href="{{ '/img/wedding/wedding_party_2.png' | prepend: site.baseurl | replace: '//', '/' }}">
-          <img class="basic-image outline-image" src="{{ '/img/wedding/wedding_party_2.png' | prepend: site.baseurl | replace: '//', '/' }}" alt="Flowers2">
-      </a>
-      </div>
-      <div class="col-lg-4 d-none d-md-block">
-        <a target="_blank" href="{{ '/img/wedding/wedding_party.png' | prepend: site.baseurl | replace: '//', '/' }}">
-          <img class="basic-image outline-image" src="{{ '/img/wedding/wedding_party.png' | prepend: site.baseurl | replace: '//', '/' }}" alt="Flowers3">
-      </a>
+  </div>
+  <div class="container container-color pt-4" style="background-color: #C6B3B9;">
+    <div class="row pt-2 justify-content-center text-center align-items-center">
+      <div class="col-8">
+        <h3>{{ page.quote }}</h3>
+        <p>{{ page.quote_author }}</p>
       </div>
     </div>
-    <div class="row jusitfy-content-center text-center">
-      <div class="col-sm-12 col-md-12 col-lg-3 py-3">
+  </div>
+  
+  <div class="container py-5">
+    <div class="row text-center">
+      <div class="col">
+        <h1>What flowers are you looking for?</h1>
+      </div>
+    </div>
+    <div class="row align-items-center justify-content-center text-center">
+      <div class="col-sm-6 col-md-6 col-lg-2 py-3">
         <a href="{{ '/pages/wedding' | prepend: site.baseurl | replace: '//', '/' }}">
-          <img class="basic-image outline-image" src="{{ '/img/assets/weddings.png' | prepend: site.baseurl | replace: '//', '/' }}" alt="Weddings">
+          <img class="basic-image outline-image" src="{{ page.wedding_button | prepend: site.baseurl | replace: '//', '/' }}" alt="Weddings">
         </a>
       </div>
-      <div class="col-sm-12 col-md-12 col-lg-3 py-3">
+      <div class="col-sm-6 col-md-6 col-lg-2 py-3">
         <a href="{{ '/pages/lobby' | prepend: site.baseurl | replace: '//', '/' }}">
-          <img class="basic-image outline-image" src="{{ '/img/assets/lobby_flowers.png' | prepend: site.baseurl | replace: '//', '/' }}" alt="lobby Flowers">
+          <img class="basic-image outline-image" src="{{ page.lobby_button | prepend: site.baseurl | replace: '//', '/' }}" alt="lobby Flowers">
         </a>
       </div>
-      <div class="col-sm-12 col-md-12 col-lg-3 py-3">
+      <div class="col-sm-6 col-md-6 col-lg-2 py-3">
         <a href="{{ '/pages/dances' | prepend: site.baseurl | replace: '//', '/' }}">
-          <img class="basic-image outline-image" src="{{ '/img/assets/dance_parties.png' | prepend: site.baseurl | replace: '//', '/' }}" alt="Dances and Parties">
+          <img class="basic-image outline-image" src="{{ page.dances_button | prepend: site.baseurl | replace: '//', '/' }}" alt="Dances and Parties">
         </a>
       </div>
-      <div class="col-sm-12 col-md-12 col-lg-3 py-3">
+      <div class="col-sm-6 col-md-6 col-lg-2 py-3">
         <a href="{{ '/pages/funerals' | prepend: site.baseurl | replace: '//', '/' }}">
-          <img class="basic-image outline-image" src="{{ '/img/assets/funerals_condolences.png' | prepend: site.baseurl | replace: '//', '/' }}" alt="Funerals and Condolences">
+          <img class="basic-image outline-image" src="{{ page.funerals_button | prepend: site.baseurl | replace: '//', '/' }}" alt="Funerals and Condolences">
         </a>
       </div>
     </div>
