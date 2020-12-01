@@ -1,9 +1,9 @@
-$main: #4B0082;
-$second: #9370DB;
+$main: #5EBDC7;
+$complimentary: #C7685E;
+$orange: #E68307;
+$second: #90A3AD;
 $gray: #e9e6e5;
-$highlight: #d35d72;
-$gold: #ffd8ca;
-$danger: red;
+
 
 .container-color {
   width: 100%;
@@ -338,6 +338,40 @@ img {
     z-index: 1;
   }
 
+
+.gallery-square {
+    float:left;
+    position: relative;
+    width: 30%;
+    padding-bottom : 30%; /* = width for a 1:1 aspect ratio */
+    margin:1.66%;
+    overflow:hidden;
+}
+
+.gallery-content {
+    position:absolute;
+    height:80%; /* = 100% - 2*10% padding */
+    width:90%; /* = 100% - 2*5% padding */
+    padding: 10% 5%;
+}
+.galler-table{
+    display:table;
+    height:100%;
+    width:100%;
+}
+.gallery-table-cell{
+    display:table-cell;
+    vertical-align:middle;
+    height:100%;
+    width:100%;
+}
+
+.image-gallery img{
+  width: 100%;
+  padding-bottom: 100%;
+  background-size: cover;
+  background-position: center;
+}  
 .image-gallery {overflow: auto; margin-left: -1%!important;}
 .image-gallery li {float: left; display: block; margin: 0 0 1% 1%; width: 19%;}
 .image-gallery li a {text-align: center; text-decoration: none!important; color: #777;}

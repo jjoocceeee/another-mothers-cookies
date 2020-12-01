@@ -1,13 +1,10 @@
 title: Freckled Florist
-baseurl:            "/freckled-florist/"
-url:                "https://jjoocceeee.github.io/freckled-florist/"
+baseurl:            "/"
+url:                "https://jjoocceeee.github.io/another-mothers-cookies/"
 
 # Social Profiles
-twitter_username:   SBootstrap
-github_username:    BlackrockDigital
-facebook_username:  StartBootstrap
-instagram_username: thefreckledflorist
-linkedin_username:
+facebook_username:  anothermotherscookies
+instagram_username: anothermotherscookies
 
 # Add your google-analytics ID here to activate google analytics
 google_analytics:   UA-XXXXXXXXX-X # out your google-analytics code

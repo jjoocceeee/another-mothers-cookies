@@ -2,23 +2,23 @@
 layout: page
 title: Gallery
 images:
-- image_path: /img/home/image_1.png
+- image_path: /img/gallery/baby_girl.jpg
   title: Apple Pie
-- image_path: /img/home/image_1.png
+- image_path: /img/gallery/baby.jpg
   title: Birthday Cake
-- image_path: /img/home/image_1.png
+- image_path: /img/gallery/cars.jpg
   title: Black Forest
-- image_path: /img/home/image_1.png
+- image_path: /img/gallery/fall_cookies.jpg
   title: Brownie
-- image_path: /img/home/image_1.png
+- image_path: /img/gallery/halloween.jpg
   title: Cheese Cake
-- image_path: /img/home/image_1.png
+- image_path: /img/gallery/harryPotter.jpg
   title: Chocolate Cake
-- image_path: /img/home/image_1.png
+- image_path: /img/gallery/mothers_day.jpg
   title: Fruit Cake
-- image_path: /img/home/image_1.png
+- image_path: /img/gallery/pumpkin.jpg
   title: Lamington
-- image_path: /img/home/image_1.png
+- image_path: /img/gallery/valentines_day.jpg
   title: Lemon Cake
 ---
 <div class="container">
@@ -30,7 +30,7 @@ images:
 <div class="row">
   {% for image in page.images %}
       <div class=" col-md-4 col-sm-12 image-gallery">
-      <img src="{{ image.image_path | prepend: site.baseurl | replace: '//', '/' }}" alt="{{ image.title}}" />
+      <img class="p-0" src="{{ image.image_path | prepend: site.baseurl | replace: '//', '/' }}" alt="{{ image.title}}" />
     </div>
     {% endfor %}
 </div>
