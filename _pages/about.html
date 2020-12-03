@@ -1,8 +1,8 @@
 ---
 layout: page
 title: About Me
-profile_pic: '/img/about/profile.png'
-family_pic: '/img/about/family.png'
+profile_pic: '/img/about/mother_daughter_cookies.jpg'
+family_pic: '/img/about/family_cookies.jpg'
 top_text: Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sed quisquam ut perspiciatis, repudiandae nulla animi iste vel, praesentium repellendus molestias aliquid consequatur, earum rem qui error voluptates eius enim consequuntur!Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ex alias, earum consectetur quia natus ducimus
 bottom_text:  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sed quisquam ut perspiciatis, repudiandae nulla animi iste vel, praesentium repellendus molestias aliquid consequatur, earum rem qui error voluptates eius enim consequuntur!Lorem 
 ---
@@ -12,27 +12,27 @@ bottom_text:  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sed quis
             <h1 class="title">{{ page.title }}</h1>
         </div>
     </div>
-    <div class="row justify-content-center p-2">
-        <div class="col-sm-12 col-md-12 col-lg-5">
+    <div class="row justify-content-center align-items-center p-2">
+        <div class="col-sm-12 col-md-5 col-lg-5">
             <a target="_blank" href="{{ page.profile_pic }}">
                 <img class="basic-image outline-image"
                     src="{{ page.profile_pic | prepend: site.baseurl | replace: '//', '/' }}" alt="{{ page.title }}">
             </a>
         </div>
-        <div class="col-sm-12 col-md-12 col-lg-5">
-            <p>{{page.top_text}}</p>
+        <div class="col-sm-12 col-md-12 col-lg-5 p-0">
+            <p class="p-0">{{page.top_text}}</p>
         </div>
       </div>
     
-      <div class="row justify-content-center p-2">
-        <div class="col-md-12 col-lg-5 col-sm-12 order-lg-2">
+      <div class="row justify-content-center align-items-center p-2">
+        <div class="col-md-5 col-lg-5 col-sm-12 order-lg-2">
             <a target="_blank" href="{{page.family_pic}}">
                 <img class="basic-image outline-image"
                 src="{{ page.family_pic | prepend: site.baseurl | replace: '//', '/' }}" alt="{{ page.title }}">
             </a>
         </div>
-        <div class="col-sm-12 col-md-12 col-lg-5 order-lg-1">
-            <p>{{page.bottom_text}}</p>
+        <div class="col-sm-12 col-md-12 col-lg-5 order-lg-1 p-0">
+            <p class="p-0">{{page.bottom_text}}</p>
         </div>
       </div>
 </div>
