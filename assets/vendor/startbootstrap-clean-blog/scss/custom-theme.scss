@@ -4,6 +4,20 @@ $orange: #E68307;
 $second: #90A3AD;
 $gray: #e9e6e5;
 
+.square-col {
+  float:left;
+  position: relative;
+  width: 30%;
+  padding-bottom : 30%; /* = width for a 1:1 aspect ratio */
+  margin:1.66%;
+  background-position:center center;
+  background-repeat:no-repeat;
+  background-size:cover; /* you change this to "contain" if you don't want the images to be cropped */
+}
+
+.fill {
+  height: 150px;
+}
 
 .container-color {
   width: 100%;

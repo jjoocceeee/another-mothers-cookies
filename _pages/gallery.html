@@ -29,9 +29,15 @@ images:
   </div>
 <div class="row">
   {% for image in page.images %}
-      <div class=" col-md-4 col-sm-12 image-gallery">
-      <img class="p-0"  src="{{ image.image_path | prepend: site.baseurl | replace: '//', '/' }}" alt="{{ image.title}}" />
-    </div>
+    <div class="col-lg-4 col-sm-12 d-md-block">
+      <div class="display: flex">
+        <a href="{{ image.image_path | prepend: site.baseurl | replace: '//', '/' }}">
+          <div class="fill container-color pt-5" style="background-image: url('{{ image.image_path | prepend: site.baseurl | replace: '//', '/' }}'); background-size: cover;">
+          </div>
+        </a>
+      </div>
+
+</div>
     {% endfor %}
 </div>
 </div>
