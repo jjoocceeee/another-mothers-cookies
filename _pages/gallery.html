@@ -27,19 +27,16 @@ images:
         <h1 class="title">{{ page.title }}</h1>
     </div>
   </div>
-<div class="row">
-  {% for image in page.images %}
-    <div class="col-lg-4 col-sm-12 d-md-block">
-      <div class="display: flex">
+  {% include image-gallery.html folder="/img/gallery" %}
+  <!-- <div class="row">
+    {% for image in page.images %}
+    <div class="col-4">
         <a href="{{ image.image_path | prepend: site.baseurl | replace: '//', '/' }}">
-          <div class="fill container-color pt-5" style="background-image: url('{{ image.image_path | prepend: site.baseurl | replace: '//', '/' }}'); background-size: cover;">
-          </div>
+          <img src="{{ image.image_path | prepend: site.baseurl | replace: '//', '/' }}" alt="{{ image.title}}"/>
         </a>
       </div>
-
-</div>
-    {% endfor %}
-</div>
+    {% endfor %}  
+  </div> -->
 </div>
 
 
