@@ -1,6 +1,6 @@
 title: Freckled Florist
-baseurl:            "/another-mothers-cookies/"
-url:                "https://jjoocceeee.github.io/another-mothers-cookies/"
+baseurl:            "/"
+url:                "http://anothermotherscookies"
 
 # Social Profiles
 facebook_username:  anothermotherscookies
@@ -22,3 +22,5 @@ collections:
   pages:
     output: true
     permalink: /:collection/:title
+
+stripe: "pk_test_51IB98BEIJYH8xdxbfROMljUOBJGI9NbrgU9z5WnQDPYrfmEbGaKuwkDWxM0Nj58Khjm1B9wVY2JAtxiUzlVmgNze00uc9ZU7oo"
